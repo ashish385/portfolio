@@ -17,6 +17,7 @@ const About = () => {
                 Ashish Soni
               </h2>
               <p className="mb-4 text-accent"> Web Developer</p>
+              
               <hr className="mb-8 opacity-5" />
               <p className="mb-8">
                 I'm a skilled and passionate web designer with experience in
