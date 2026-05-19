@@ -11,6 +11,9 @@ import {
   FiMail,
   FiMapPin,
   FiLinkedin,
+  FiServer,
+  FiCpu,
+  FiSmartphone,
 } from "react-icons/fi";
 
 // companies icons
@@ -25,8 +28,10 @@ import Project1 from "./assets/img/projects/tic-tac-toe.png";
 import Project2 from "./assets/img/projects/StudyNotion.png";
 import Project3 from "./assets/img/projects/mern-chat-app.png";
 import Project4 from "./assets/img/projects/school-erp.png";
-// import Project5 from "./assets/img/projects/p5.webp";
-// import Project6 from "./assets/img/projects/p6.webp";
+import Project5 from "./assets/img/projects/kbspublischool.png";
+import Project6 from "./assets/img/projects/react-dashboard.png";
+import Project7 from "./assets/img/projects/lms.png";
+import Project8 from "./assets/img/projects/hms.png";
 
 // skills images
 import SkillImg1 from "./assets/img/skills/html5.png";
@@ -96,140 +101,204 @@ export const brands = [
   {
     img: FreelancerBrandIcon,
     href: "#",
+    motion: { delayMs: 0, durationMs: 550 },
   },
   {
     img: UpworkBrandIcon,
     href: "#",
+    motion: { delayMs: 80, durationMs: 550 },
   },
   {
     img: FiverBrandIcon,
     href: "#",
+    motion: { delayMs: 160, durationMs: 550 },
   },
   {
     img: BehanceBrandIcon,
     href: "#",
+    motion: { delayMs: 240, durationMs: 550 },
   },
   {
     img: DribbbleBrandIcon,
     href: "#",
+    motion: { delayMs: 320, durationMs: 550 },
   },
 ];
 
+
 // projects
+// Apne assets paths ke sath check kar lijiyega jo bhi images variable paths hain
 export const projectsData = [
   {
     id: "1",
-    image: Project1,
-    name: "Tic-Tac-Toe",
-    category: "UI/UX design",
-    link: "https://tic-tac-toe-game-on.netlify.app/",
+    image: Project8, // Replace with your actual asset if distinct
+    name: "MediCloud – Enterprise Healthcare Platform",
+    category: "Full-Stack Development (Freelance)",
+    description: "Architecting a secure hospital management ecosystem using the MERN stack and Material UI (MUI). Currently implementing state-compliant ABDM (Ayushman Bharat Digital Mission) sandbox integrations to manage electronic health records (EHR) over secure federal healthcare networks.",
+    github: "", // Kept blank safely to protect private client repository contract
+    link: "#",
+    motion: { delayMs: 0, durationMs: 550 },
   },
   {
     id: "2",
-    image: Project2,
-    name: "StudyNotion",
-    category: "web development",
-    link: "https://studynotion87.netlify.app/",
+    image: Project3,
+    name: "NexusChat – Real-Time Messaging System",
+    category: "Web Development",
+    description: "Engineered a scalable full-stack real-time communication portal using React, Node.js, Express, and MongoDB. Integrated WebSockets (Socket.io) for instantaneous packet transmission, alongside encrypted JSON Web Token (JWT) user authentication protocols.",
+    github: "", 
+    link: "https://onrender.com",
+    motion: { delayMs: 100, durationMs: 550 },
   },
   {
     id: "3",
-    image: Project3,
-    name: "MERN Chat-App",
-    category: "web development",
-    link: "https://mern-chat-app-yjcn.onrender.com/",
+    image: Project2,
+    name: "StudyNotion – Advanced EdTech Platform",
+    category: "Web Development",
+    description: "Developed a functional learning management system configured with video storage rendering pipelines, structured content management hubs, dynamic student-instructor privilege portals, and interactive administrative dashboard widgets.",
+    github: "",
+    link: "https://netlify.app",
+    motion: { delayMs: 200, durationMs: 550 },
   },
   {
     id: "4",
-    image: Project4,
-    name: "School_ERP",
-    category: "web development",
-    link: "https://main--effulgent-buttercream-621bd3.netlify.app/",
+    image: Project7,
+    name: "FinRoute – Automated Home Loan Engine",
+    category: "Web Development",
+    description: "Designed an enterprise financial network engineered to parse user data models and compute composite interest schema matrix transformations automatically. Integrated with a clean validation flow interface to manage system security logs.",
+    github: "https://github.com",
+    link: "https://netlify.app",
+    motion: { delayMs: 300, durationMs: 550 },
   },
-  // {
-  //   id: "5",
-  //   image: Project5,
-  //   name: "project name 5",
-  //   category: "web development",
-  // },
-  // {
-  //   id: "6",
-  //   image: Project6,
-  //   name: "project name 6",
-  //   category: "web development",
-  // },
+  {
+    id: "5",
+    image: Project4,
+    name: "EduCore – Academic ERP Network",
+    category: "Web Development",
+    description: "Built a fully relational administrative resource planning platform to monitor high-volume institutional metrics. Built with automated data-tables architectures to safely structure grading logs and accounting ledgers.",
+    github: "",
+    link: "https://netlify.app",
+    motion: { delayMs: 400, durationMs: 550 },
+  },
+  {
+    id: "6",
+    image: Project5,
+    name: "KBS Public – Institutional Portal",
+    category: "Web Development",
+    description: "Designed and optimized a responsive corporate web showcase layout ensuring sub-second visual load performance scores. Focused deeply on cross-browser cross-device flex grid structures, layouts rendering optimization, and typography scales.",
+    github: "https://github.com",
+    link: "https://kbspublicschoolmangarh.com",
+    motion: { delayMs: 500, durationMs: 550 },
+  },
+  {
+    id: "7",
+    image: Project6,
+    name: "OmniSight – Telemetry Admin Console",
+    category: "UI/UX Design",
+    description: "Crafted a high-fidelity data visualization layout schema specialized in complex operational tracking metrics. Features an analytical tracking grid containing flexible component layouts to ensure data visibility benchmarks.",
+    github: "",
+    link: "https://onrender.com",
+    motion: { delayMs: 600, durationMs: 550 },
+  },
+  {
+    id: "8",
+    image: Project1,
+    name: "GridShift – Interactive State Game",
+    category: "UI/UX Design",
+    description: "Engineered a low-latency mini game matrix to test performance optimizations of state hook dependencies inside React. Built using pure custom atomic layouts to guarantee smooth structural frame-rates.",
+    github: "",
+    link: "https://netlify.app",
+    motion: { delayMs: 700, durationMs: 550 },
+  },
 ];
+
+
+
 
 // projects
 export const projectsNav = [
-  {
-    name: "all",
-  },
-  {
-    name: "UI/UX Design",
-  },
-  {
-    name: "web development",
-  },
-  // {
-  //   name: 'branding',
-  // },
+  { name: 'all' },
+  { name: 'web development' },
+  { name: 'UI/UX design' },
 ];
+
 
 // skill
 export const skills = [
   {
     image: SkillImg1,
+    motion: { delayMs: 0, durationMs: 550 },
   },
   {
     image: SkillImg2,
+    motion: { delayMs: 70, durationMs: 550 },
   },
   {
     image: SkillImg3,
+    motion: { delayMs: 140, durationMs: 550 },
   },
   {
     image: SkillImg4,
+    motion: { delayMs: 210, durationMs: 550 },
   },
   {
     image: SkillImg5,
+    motion: { delayMs: 280, durationMs: 550 },
   },
   {
     image: SkillImg6,
+    motion: { delayMs: 350, durationMs: 550 },
   },
   {
     image: SkillImg7,
+    motion: { delayMs: 420, durationMs: 550 },
   },
   {
     image: SkillImg8,
+    motion: { delayMs: 490, durationMs: 550 },
   },
 ];
 
+
 // services
+
 export const services = [
   {
     icon: <FiLayout />,
     name: "Web Design",
     description:
-      "Building a user-friendly website involves a combination of design, development, and usability considerations. Continuously gather feedback from users and make improvements to ensure a positive user experience.",
+      "Crafting high-fidelity, high-converting minimal user interfaces with deep premium layouts. Focused cleanly on smooth micro-interactions, responsive grids alignment, and seamless modern user experiences.",
+    motion: { delayMs: 0, durationMs: 550 },
   },
   {
     icon: <FiSettings />,
     name: "Web Development",
     description:
-      " A full-stack developer is proficient in a wide range of technologies and tools, allowing them to handle all aspects of a web project, from designing the user interface to managing the server and databases.",
+      "Engineering robust frontend clients and structural full-stack architectures. Proficient across high-end modern frameworks to build secure web platforms with optimized asset loads.",
+    motion: { delayMs: 100, durationMs: 550 },
   },
-  // {
-  //   icon: <FiPenTool />,
-  //   name: 'Branding',
-  //   description:
-  //     'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
-  // },
-  // {
-  //   icon: <FiTag />,
-  //   name: 'SEO',
-  //   description:
-  //     'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
-  // },
+  {
+    icon: <FiServer />,
+    name: "Backend & DevOps",
+    description:
+      "Designing clean restful APIs with distributed scalable database systems. Configuring automated pipeline deployments, secure cloud host environments, and server logic flows.",
+    motion: { delayMs: 200, durationMs: 550 },
+  },
+  {
+    icon: <FiCpu />,
+    name: "AI & Custom Tools",
+    description:
+      "Integrating predictive smart AI logic layers, machine models wrappers, and deep analytical dashboards to scale manual workflows into automated performant digital utilities.",
+    motion: { delayMs: 300, durationMs: 550 },
+  },
+  {
+    icon: <FiSmartphone />,
+    name: "App Development",
+    description:
+      "Building seamless native mobile clients across platforms with shared optimized engineering modules. Focused heavily on lightning-fast tactile rendering speed and clean physical graphics.",
+    motion: { delayMs: 400, durationMs: 550 },
+  },
 ];
+
 
 // testimonials
 export const testimonials = [
@@ -266,11 +335,14 @@ export const contact = [
     dd: `<p className=" text-accent mb-1 font-normal">
                       {description}
                     </p>`,
+    motion: { delayMs: 0, durationMs: 550 },
   },
   {
     icon: <FiMapPin />,
     title: "Current Location",
     subtitle: "Gaura Pandey, U.P",
     description: "Serving clients worldwide",
+    motion: { delayMs: 140, durationMs: 550 },
   },
 ];
+

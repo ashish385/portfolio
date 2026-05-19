@@ -9,7 +9,6 @@ const Projects = () => {
     const [active, setActive] = useState(0);
 
     useEffect(() => {
-        console.log(projectsData);
         if (items === 'all') {
             setProjects(projectsData)
         } else {
@@ -19,16 +18,12 @@ const Projects = () => {
             setProjects(newProject);
         }
     }, [items])
-    
+
     const handleClick = (e, index) => {
-        console.log("check",e.target.textContent);
         setItems( e.target.textContent );
         setActive(index)
-       
     }
-    console.log("it", items);
-    console.log("pro",projects);
-    // console.log("index",active);
+
   return (
     <div>
       <nav className="mb-12 max-w-xl mx-auto">
